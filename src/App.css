@@ -40,3 +40,17 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Modificar la apariencia de las tablas */
+.custom-table .p-datatable-header {
+  background-color: #4CAF50; /* Color de fondo del encabezado */
+  color: white;              /* Color de texto del encabezado */
+}
+
+.custom-table .p-datatable-tbody > tr:nth-child(odd) {
+  background-color: #f2f2f2; /* Fondo alterno en filas */
+}
+
+.custom-table .p-datatable-tbody > tr:hover {
+  background-color: #ddd; /* Resaltar fila al pasar el ratón */
+}
