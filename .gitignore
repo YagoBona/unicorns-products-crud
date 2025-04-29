@@ -1,0 +1,40 @@
+# Node modules
+node_modules/
+
+# Output de producción
+dist/
+
+# Archivos temporales de Vite
+.vite/
+
+# Archivos del sistema / editor
+.DS_Store
+Thumbs.db
+
+# Archivos de entorno
+.env
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDEs / editores
+.vscode/
+.idea/
+*.swp
+
+# Dependencias de testing o cobertura (si usás pruebas)
+coverage/
+
+# Archivos creados por errores de compilación
+*.log
+
+# Archivos del sistema operativo
+*.bak
+*.tmp
+
+# Archivos de configuración de Linux/Mac
+*.orig
