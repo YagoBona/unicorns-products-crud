@@ -38,15 +38,34 @@ const UnicornsView = () => {
       u.status || "Activo",
     ]);
 
+    const fecha = new Date().toLocaleDateString();
+    doc.text(`Fecha de exportación: ${fecha}`, 14, 28);
+
+
     autoTable(doc, {
       startY: 30,
       head: [["Nombre", "Color", "Poder", "Edad", "Estado"]],
       body: tableData,
-      theme: "grid",
-      headStyles: { fillColor: [63, 81, 181], textColor: 255 },
-      alternateRowStyles: { fillColor: [245, 245, 245] },
-      styles: { fontSize: 10 },
+      theme: "striped",
+      styles: {
+        fontSize: 11,
+        halign: "center",
+        cellPadding: 4,
+        lineColor: [200, 200, 200],
+        lineWidth: 0.3,
+      },
+      headStyles: {
+        fillColor: [40, 40, 140],
+        textColor: 255,
+        fontStyle: "bold",
+        halign: "center",
+      },
+      alternateRowStyles: {
+        fillColor: [240, 248, 255],
+      },
+      margin: { top: 30 },
     });
+    
 
     doc.save("unicornios.pdf");
   };
