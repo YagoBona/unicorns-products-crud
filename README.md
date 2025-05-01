@@ -87,7 +87,7 @@ src/
 1. Cloná el repositorio:
 
 ```bash
-git clone https://github.com/tuusuario/nombre-del-repo.git
+git clone https://github.com/YagoBona/unicorns-products-crud.git
 cd nombre-del-repo
 ```
 
